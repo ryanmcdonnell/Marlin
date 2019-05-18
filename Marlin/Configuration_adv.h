@@ -277,9 +277,9 @@
  * The fan will turn on automatically whenever any stepper is enabled
  * and turn off after a set period after all steppers are turned off.
  */
-//#define USE_CONTROLLER_FAN
+#define USE_CONTROLLER_FAN
 #if ENABLED(USE_CONTROLLER_FAN)
-  //#define CONTROLLER_FAN_PIN -1        // Set a custom pin for the controller fan
+  #define CONTROLLER_FAN_PIN P3_26       // Set a custom pin for the controller fan
   #define CONTROLLERFAN_SECS 60          // Duration in seconds for the fan to run after all motors are disabled
   #define CONTROLLERFAN_SPEED 255        // 255 == full speed
 #endif
@@ -438,7 +438,7 @@
   #endif
 #endif
 
-//#define Z_DUAL_STEPPER_DRIVERS
+#define Z_DUAL_STEPPER_DRIVERS
 #if ENABLED(Z_DUAL_STEPPER_DRIVERS)
   //#define Z_DUAL_ENDSTOPS
   #if ENABLED(Z_DUAL_ENDSTOPS)
@@ -518,7 +518,7 @@
 #define Y_HOME_BUMP_MM 5
 #define Z_HOME_BUMP_MM 2
 #define HOMING_BUMP_DIVISOR { 2, 2, 4 }  // Re-Bump Speed Divisor (Divides the Homing Feedrate)
-//#define QUICK_HOME                     // If homing includes X and Y, do a diagonal move initially
+#define QUICK_HOME                     // If homing includes X and Y, do a diagonal move initially
 //#define HOMING_BACKOFF_MM { 2, 2, 2 }  // (mm) Move away from the endstops after homing
 
 // When G28 is called, this option will make Y home before X
