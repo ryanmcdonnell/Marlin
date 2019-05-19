@@ -832,7 +832,7 @@
  */
 #define BLTOUCH
 #if ENABLED(BLTOUCH)
-  //#define BLTOUCH_DELAY 500   // Minimum Command delay (ms). Enable and increase if needed
+  //#define BLTOUCH_DELAY 200   // Minimum Command delay (ms). Enable and increase if needed
 
   /**
    * BLTouch V3.0 and newer smart series
@@ -1014,7 +1014,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 170
+#define Z_MAX_POS 225
 
 /**
  * Software Endstops
@@ -1251,7 +1251,7 @@
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-#define LEVEL_BED_CORNERS
+//#define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
   #define LEVEL_CORNERS_INSET 30    // (mm) An inset for corner leveling
@@ -1667,7 +1667,7 @@
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
 //
-#define SPEAKER
+//#define SPEAKER
 
 //
 // The duration and frequency for the UI feedback sound.
